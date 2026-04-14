@@ -118,7 +118,7 @@ Cuando los valores son iguales a 1, el objeto no sufre ningún cambio en su tama
 
 La rotación es una transformación geométrica bidimensional que consiste en girar un objeto o figura alrededor de un punto fijo, denominado centro de rotación o pivote, dentro del plano cartesiano. Durante este proceso, cada uno de los puntos que conforman la figura se desplaza siguiendo trayectorias circulares, manteniendo constante su distancia respecto al punto de rotación.
 
-Esta transformación se define mediante un ángulo de rotación (\theta), el cual determina la magnitud del giro, así como su dirección. Por convención, los ángulos positivos representan una rotación en sentido antihorario, mientras que los ángulos negativos indican una rotación en sentido horario.
+Esta transformación se define mediante un ángulo de rotación, el cual determina la magnitud del giro, así como su dirección. Por convención, los ángulos positivos representan una rotación en sentido antihorario, mientras que los ángulos negativos indican una rotación en sentido horario.
 
 A diferencia de otras transformaciones, como el escalamiento o el sesgado, la rotación no modifica las propiedades geométricas del objeto, tales como su tamaño, forma o proporciones. Únicamente altera su orientación y posición en el plano.
 
