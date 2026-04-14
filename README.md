@@ -1,4 +1,4 @@
-
+## Apuntes unidad 2 :  Graficación 2D
 
 
 
@@ -90,13 +90,11 @@ En este caso, los factores de escala son diferentes en cada eje, es decir, sx �
 **Características**
 
 
-1. Uso de factores de escala
-El escalamiento se realiza mediante dos factores, S_x y S_y, que representan el cambio de tamaño en los ejes X y Y, respectivamente. Estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
+1. Uso de factores de escala: El escalamiento se realiza mediante dos factores, Sx y Sy, que representan el cambio de tamaño en los ejes X y Y, respectivamente. Estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
 
 
 
-2. Efecto de los valores de escalamiento
-El resultado de la transformación depende del valor de los factores de escala:
+2. Efecto de los valores de escalamiento: El resultado de la transformación depende del valor de los factores de escala:
 
 -Cuando los valores son mayores que 1, el objeto experimenta un aumento de tamaño (ampliación).
 
@@ -105,31 +103,22 @@ El resultado de la transformación depende del valor de los factores de escala:
 -Cuando los valores son iguales a 1, el objeto no sufre ningún cambio en su tamaño.
 
 
-3. Independencia por eje
-
-Los factores Sx y Sy pueden aplicarse de manera independiente, lo que permite modificar el tamaño del objeto de forma distinta en cada eje. Esto proporciona flexibilidad para adaptar la figura a diferentes necesidades o condiciones.
+3. Independencia por eje: Los factores Sx y Sy pueden aplicarse de manera independiente, lo que permite modificar el tamaño del objeto de forma distinta en cada eje. Esto proporciona flexibilidad para adaptar la figura a diferentes necesidades o condiciones.
 
 
-4. Escalamiento uniforme
-
-Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original. Este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
+4. Escalamiento uniforme: Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original. Este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
 
 
 
-5. Escalamiento diferencial (no uniforme)
-
-Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma. Es decir, la figura puede estirarse o comprimirse en una dirección específica.
+5. Escalamiento diferencial (no uniforme): Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma. Es decir, la figura puede estirarse o comprimirse en una dirección específica.
 
 
 
-6. Aplicación a todos los puntos del objeto
-
-El escalamiento se aplica a cada uno de los puntos que conforman la figura al multiplicar todas las coordenadas por los factores de escala, se obtiene una nueva representación del objeto con el tamaño modificado.
+6. Aplicación a todos los puntos del objeto: El escalamiento se aplica a cada uno de los puntos que conforman la figura al multiplicar todas las coordenadas por los factores de escala, se obtiene una nueva representación del objeto con el tamaño modificado.
 
 
-7. Conservación parcial de propiedades
+7. Conservación parcial de propiedades: Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones. Sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
 
-Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones. Sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
 
 **2.1.3. Rotación.**
 
@@ -146,32 +135,22 @@ En el ámbito de la computación gráfica, la rotación se expresa comúnmente m
 
 **Características*¨*
 
-1. Definición mediante ángulo y punto de rotación
+1. Definición mediante ángulo y punto de rotación : Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
 
-Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
-
-2. Sentido de la rotación
-
-El sentido en el que se realiza la rotación depende del signo del ángulo:
+2. Sentido de la rotación: El sentido en el que se realiza la rotación depende del signo del ángulo:
 
 -Un ángulo positivo indica una rotación en sentido antihorario.
 
 
 -Un ángulo negativo indica una rotación en sentido horario.
 
-3. Trayectoria circular de los puntos
+3. Trayectoria circular de los puntos: Durante la rotación, cada punto del objeto se desplaza siguiendo una trayectoria circular alrededor del punto pivote, manteniendo constante su distancia respecto a este.
 
-Durante la rotación, cada punto del objeto se desplaza siguiendo una trayectoria circular alrededor del punto pivote, manteniendo constante su distancia respecto a este.
+4. Conservación de la forma y el tamaño: La rotación es una transformación rígida, lo que significa que no altera las propiedades geométricas del objeto. La figura conserva su forma, tamaño y proporciones, cambiando únicamente su orientación.
 
-4. Conservación de la forma y el tamaño
+5. Aplicación uniforme a todos los puntos: Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto. Esto garantiza que la figura no se deforme durante el proceso.
 
-La rotación es una transformación rígida, lo que significa que no altera las propiedades geométricas del objeto. La figura conserva su forma, tamaño y proporciones, cambiando únicamente su orientación.
-
-5. Aplicación uniforme a todos los puntos
-
-Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto. Esto garantiza que la figura no se deforme durante el proceso.
-
-6. Rotación respecto al origen y puntos arbitrarios
+6. Rotación respecto al origen y puntos arbitrarios:
 
 La rotación puede realizarse:
 
@@ -191,15 +170,11 @@ El sesgado es ampliamente utilizado en áreas como el diseño gráfico, la anima
 
 **Características**
 
-1. Transformación no rígida
-
-El sesgado es una transformación no rígida, lo que significa que modifica la forma del objeto original. A diferencia de la traslación o la rotación, aquí sí existe deformación.
+1. Transformación no rígida: El sesgado es una transformación no rígida, lo que significa que modifica la forma del objeto original. A diferencia de la traslación o la rotación, aquí sí existe deformación.
 
 
 
-2. Desplazamiento proporcional de los puntos
-
-Los puntos del objeto se desplazan en función de su posición respecto a uno de los ejes. Este desplazamiento es proporcional, lo que genera la inclinación característica de la figura.
+2. Desplazamiento proporcional de los puntos: Los puntos del objeto se desplazan en función de su posición respecto a uno de los ejes. Este desplazamiento es proporcional, lo que genera la inclinación característica de la figura.
 
 
 
@@ -208,9 +183,7 @@ Los puntos del objeto se desplazan en función de su posición respecto a uno de
 Aunque el objeto se deforma, las líneas que eran paralelas antes de la transformación continúan siéndolo después del sesgado.
 
 
-4. Dependencia de un factor de sesgo
-
-El grado de inclinación del objeto depende de un valor llamado factor de sesgo, el cual determina cuánto se desplazan los puntos del objeto.
+4. Dependencia de un factor de sesgo: El grado de inclinación del objeto depende de un valor llamado factor de sesgo, el cual determina cuánto se desplazan los puntos del objeto.
 
 
 
@@ -286,6 +259,73 @@ A diferencia de las curvas de Bézier, donde toda la curva depende de todos los 
 Las curvas B-spline ofrecen una gran flexibilidad y control en la modelación, permitiendo la creación de formas complejas mediante la combinación de múltiples segmentos suaves. Gracias a esto, son ampliamente utilizadas en aplicaciones donde se requiere precisión y detalle en la geometría.
 
 En el ámbito práctico, las B-spline tienen múltiples aplicaciones. En el diseño asistido por computadora (CAD), se emplean para modelar superficies tridimensionales complejas con gran exactitud. En la animación, permiten generar movimientos suaves y continuos, fundamentales para la creación de gráficos dinámicos y personajes en 3D. Asimismo, en el diseño industrial, se utilizan para desarrollar productos con formas funcionales y estéticamente agradables, mejorando aspectos como la ergonomía y la usabilidad.
+
+** Ejemplo**
+
+En la animación realizada, el personaje está construido utilizando curvas spline, específicamente curvas Bézier, que son un tipo de representación matemática muy utilizada en gráficos por computadora.
+
+Las curvas Bézier funcionan mediante puntos de control, los cuales permiten definir la forma de la curva. En lugar de formar líneas rectas entre puntos, estas curvas generan transiciones suaves y continuas, lo que resulta ideal para dibujar figuras orgánicas, como el cuerpo del conejo en la animación.
+
+Este tipo de curvas pertenece a la familia de las splines, que son funciones matemáticas diseñadas para crear formas suaves a partir de varios puntos. Dentro de esta misma familia también se encuentran las B-spline (Basis spline), que son una generalización más avanzada.
+
+<img width="589" height="477" alt="image" src="https://github.com/user-attachments/assets/8d8932b7-3159-4809-94ab-d873a0bce836" />
+
+<img width="589" height="248" alt="image" src="https://github.com/user-attachments/assets/6912dcd8-578c-4b72-b689-10335242315c" />
+
+## 2.4. Fractales
+
+Un fractal es un objeto geométrico cuya estructura se repite a diferentes escalas, es decir, presenta un patrón que se reproduce de forma similar tanto en su forma completa como en sus partes más pequeñas. Esta característica se conoce como autosimilitud, y permite que los fractales tengan una apariencia compleja a partir de reglas simples.
+
+El término “fractal” fue propuesto en 1975 por el matemático Benoît Mandelbrot, y proviene del latín fractus, que significa “quebrado” o “fragmentado”. Este nombre describe la naturaleza irregular y fragmentada de estas figuras, las cuales no siguen las formas geométricas tradicionales.
+
+Una de las propiedades más importantes de los fractales es que poseen una dimensión fractal, la cual no necesariamente es un número entero. A diferencia de las figuras clásicas (como líneas, cuadrados o cubos), los fractales pueden tener dimensiones intermedias, lo que refleja su nivel de complejidad y detalle.
+
+Aunque el concepto de fractal es relativamente moderno, muchas de estas estructuras ya eran estudiadas en matemáticas desde principios del siglo XX. Los métodos para medir su complejidad, como la dimensión fractal, surgieron dentro del desarrollo de la teoría de la medida.
+
+En la graficación 2D, los fractales son muy importantes porque permiten generar imágenes complejas y detalladas mediante algoritmos matemáticos. Se utilizan para representar fenómenos naturales como montañas, nubes, costas o plantas, ya que muchas de estas formas presentan comportamientos similares a los fractales.
+
+
+## 2.5. Uso y creación de fuentes de texto.
+
+Las fuentes de texto, también conocidas como tipografías, son un elemento fundamental en la representación gráfica, ya que permiten comunicar información de manera visual, clara y estética. En la graficación bidimensional, las fuentes no solo cumplen una función informativa, sino también visual, ya que influyen en la apariencia, el estilo y la legibilidad de los contenidos. La correcta elección de una tipografía puede mejorar significativamente la comprensión del mensaje y la experiencia del usuario.
+
+El uso de fuentes de texto es esencial en diversas áreas como el diseño gráfico, las interfaces de usuario, los videojuegos y las aplicaciones digitales. A través de ellas, es posible organizar la información, resaltar elementos importantes y transmitir diferentes estilos visuales, como formalidad, modernidad o creatividad. Además, factores como el tamaño, el grosor, el espaciado y el contraste de las letras son determinantes para garantizar una adecuada legibilidad, especialmente en medios digitales.
+
+Por otro lado, la creación de fuentes de texto es un proceso que combina principios de diseño gráfico con fundamentos matemáticos. En la actualidad, las tipografías digitales se construyen principalmente mediante gráficos vectoriales, lo que permite que puedan escalarse a distintos tamaños sin perder calidad. Cada carácter se diseña a partir de líneas y curvas, comúnmente utilizando curvas de Bézier, las cuales permiten definir formas suaves y precisas mediante el uso de puntos de control.
+
+Durante el proceso de creación, se diseñan individualmente los caracteres, cuidando aspectos como la proporción, el equilibrio visual y la coherencia del estilo. También se consideran elementos como el espaciado entre letras, conocido como interletraje o kerning, que influye directamente en la legibilidad del texto. Una vez diseñados, los caracteres se digitalizan y se almacenan en formatos como TrueType u OpenType, los cuales permiten su uso en diferentes sistemas y aplicaciones.
+
+En la graficación 2D, las fuentes de texto tienen una gran importancia, ya que pueden integrarse fácilmente en composiciones visuales y ser transformadas mediante operaciones como escalado, rotación o traslación sin perder calidad. Esto se debe a su naturaleza vectorial, que las hace altamente adaptables a distintos contextos y dispositivos.
+
+## Bibliografías 
+
+Sign in - Google Accounts. (s. f.). https://classroom.google.com/u/1/c/ODQxMTczMTY4MTE1/a/ODU4NTM2NTMwNjc2/details
+
+Salazar, H. (s. f.). Graficacion Unidad II. Buap. https://www.cs.buap.mx/~hilario_sm/slide/graficacion/Unidad-II.pdf
+
+Martinez, P. (2025, 3 marzo). Transformación Bidimensional. Prezi. https://prezi.com/p/rvfqhafuenzp/transformacion-bidimensional/
+
+Graficación2D-transformaciones bidimensionales. (s. f.). Slideshare. https://www.slideshare.net/slideshow/graficacion2d-transformaciones-bidimensionales/271921986
+
+Unidad II. (2012, 14 diciembre). Graficación. https://smoke5284.wordpress.com/unidad-ii/
+
+Coob, S. (2019, 22 noviembre). Transformaciones Bidimensionales y Sesgado. Scribd. https://www.scribd.com/document/438661564/Transformaciones-Bidimencionales-docx
+
+
+Valdes, A. S. (2013b, septiembre 24). 2.4 Representación matricial. https://graficacionito.blogspot.com/2013/09/24-representacion-matricial.html
+
+Tepole, A. C. (2025, 18 septiembre). Trazado de Líneas Curvas: Bézier y B-spline. Prezi. https://prezi.com/p/s8ll8r8m3tir/trazado-de-lineas-curvas-bezier-y-b-spline/
+
+Unknown. (s. f.-a). Curvas de Bézier. https://oscarhumbertoramirezcruzgraficacion.blogspot.com/2017/11/curvas-de-bezier.html
+
+Curvas B-spline. (s. f.). (C) Copyright 2017. https://docs.bentley.com/LiveContent/web/MicroStation%20Help-v26/es/GUID-E54007AE-BB6E-55AA-A09C-A1F5E39A58A5.html
+
+Fractales. (s. f.). https://fernandez-torres-jose.blogspot.com/2012/08/fractales.html?m=1
+
+
+
+
+
 
 
 
