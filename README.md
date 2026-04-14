@@ -5,7 +5,7 @@ En conjunto, todos estos conceptos ayudan a comprender mejor cómo se construyen
 
 ## 2.1  Transformación bidimensional.
 
-La transformación bidimensional es el proceso mediante el cual se modifican las características de una figura dentro de un plano de dos dimensiones (2D). Estas modificaciones pueden afectar su posición, tamaño, orientación o forma, sin necesidad de crear una nueva figura.
+La transformación bidimensional es el proceso mediante el cual se modifican las características de una figura dentro de un plano de dos dimensiones (2D) estas modificaciones pueden afectar su posición, tamaño, orientación o forma, sin necesidad de crear una nueva figura.
 Se basa en operaciones matemáticas aplicadas a las coordenadas de los puntos que forman la figura, lo que permite obtener una nueva representación de la misma. Entre estas operaciones se encuentran la traslación, el escalamiento, la rotación y el sesgado.
 Este tipo de transformación es muy importante en áreas como la graficación por computadora, el diseño gráfico y la animación, ya que permite manipular imágenes y objetos de manera eficiente, facilitando su visualización, movimiento y análisis.
 
@@ -14,21 +14,21 @@ Este tipo de transformación es muy importante en áreas como la graficación po
 -Diseño gráfico: En el diseño gráfico, las transformaciones bidimensionales permiten modificar imágenes y figuras sin tener que crearlas desde cero, se utilizan para cambiar el tamaño (escalado), mover elementos (traslación) o girarlos (rotación). Esto facilita la creación de logotipos, ilustraciones y composiciones visuales de manera más rápida y precisa.
 
 
--Animación: En la animación, estas transformaciones son esenciales para dar movimiento a los objetos. Por ejemplo, un personaje puede moverse de un lugar a otro (traslación), girar (rotación) o cambiar de tamaño (escala), gracias a esto, se pueden crear secuencias fluidas que simulan movimiento en pantalla
+-Animación: En la animación, estas transformaciones son esenciales para dar movimiento a los objetos por  ejemplo, un personaje puede moverse de un lugar a otro (traslación), girar (rotación) o cambiar de tamaño (escala), gracias a esto, se pueden crear secuencias fluidas que simulan movimiento en pantalla
 
 
--Modelado en 2D: En el modelado en 2D, se utilizan para diseñar personajes, escenarios y objetos dentro de videojuegos o aplicaciones. Las transformaciones permiten posicionar correctamente cada elemento en la escena y ajustar su tamaño o dirección.
+-Modelado en 2D: En el modelado en 2D, se utilizan para diseñar personajes, escenarios y objetos dentro de videojuegos o aplicaciones, las transformaciones permiten posicionar correctamente cada elemento en la escena y ajustar su tamaño o dirección.
 
 
--Interfaz de usuario (UI): En las interfaces de usuario, las transformaciones permiten mejorar la experiencia del usuario. Por ejemplo, los botones pueden cambiar de tamaño al tocarlos (escala), moverse o animarse para llamar la atención.
+-Interfaz de usuario (UI): En las interfaces de usuario, las transformaciones permiten mejorar la experiencia del usuario por ejemplo, los botones pueden cambiar de tamaño al tocarlos (escala), moverse o animarse para llamar la atención.
 
 
 
 
 ## 2.1.1. Traslación.
 
-La traslación es una transformación bidimensional que consiste en mover una figura de una posición a otra en línea recta, sin cambiar su forma, tamaño ni orientación, es decir, la figura solo se desliza en el plano. Para trasladar un punto, se le suman dos valores llamados tx y ty a sus coordenadas originales si tenemos un punto (x, y), después de la traslación se convierte en (x + tx, y + ty), estos valores indican cuánto se mueve el objeto en el eje X y en el eje Y.
-El conjunto de valores (tx, ty) se conoce como vector de traslación, ya que indica la dirección y la distancia del movimiento este vector nos dice hacia dónde y cuánto se va a desplazar la figura. Cuando se traslada una figura como un polígono, se aplica el mismo vector de traslación a cada uno de sus vértices después, se reconstruye la figura con las nuevas coordenadas, manteniendo su forma original.
+La traslación es una transformación bidimensional que consiste en mover una figura de una posición a otra en línea recta, sin cambiar su forma, tamaño ni orientación, es decir, la figura solo se desliza en el plano, para trasladar un punto, se le suman dos valores llamados tx y ty a sus coordenadas originales si tenemos un punto (x, y), después de la traslación se convierte en (x + tx, y + ty), estos valores indican cuánto se mueve el objeto en el eje X y en el eje Y.
+El conjunto de valores (tx, ty) se conoce como vector de traslación, ya que indica la dirección y la distancia del movimiento este vector nos dice hacia dónde y cuánto se va a desplazar la figura, cuando se traslada una figura como un polígono se aplica el mismo vector de traslación a cada uno de sus vértices después, se reconstruye la figura con las nuevas coordenadas, manteniendo su forma original.
 
 
 **Características**
@@ -45,14 +45,14 @@ El conjunto de valores (tx, ty) se conoce como vector de traslación, ya que ind
 
 
 -Naturaleza de las distancias de traslación
-Las distancias de traslación pueden tomar cualquier valor real, es decir, pueden ser positivas, negativas o nulas. Un valor positivo indica un desplazamiento en el sentido positivo del eje, mientras que un valor negativo indica un movimiento en sentido contrario.
+Las distancias de traslación pueden tomar cualquier valor real, es decir, pueden ser positivas, negativas o nulas un valor positivo indica un desplazamiento en el sentido positivo del eje, mientras que un valor negativo indica un movimiento en sentido contrario.
 
 
 
--Limitaciones dentro del sistema de representación: Cuando un objeto es trasladado fuera de los límites del área de visualización o del sistema gráfico, pueden presentarse diferentes situaciones, como la omisión parcial del objeto, su recorte o incluso la generación de errores en el sistema. Estas limitaciones dependen del entorno o software utilizado.
+-Limitaciones dentro del sistema de representación: Cuando un objeto es trasladado fuera de los límites del área de visualización o del sistema gráfico, pueden presentarse diferentes situaciones, como la omisión parcial del objeto, su recorte o incluso la generación de errores en el sistema estas limitaciones dependen del entorno o software utilizado.
 
 
--Conservación de las propiedades geométricas: Una característica esencial de la traslación es que no altera las propiedades del objeto. Es decir, la figura conserva su forma, tamaño, orientación y proporciones, ya que únicamente cambia su posición en el plano.
+-Conservación de las propiedades geométricas: Una característica esencial de la traslación es que no altera las propiedades del objeto, es decir, la figura conserva su forma, tamaño, orientación y proporciones, ya que únicamente cambia su posición en el plano.
 
 ## 2.1.2. Escalamiento.
 
@@ -84,7 +84,7 @@ Tipos de escalamiento
 **Características**
 
 
--Uso de factores de escala: El escalamiento se realiza mediante dos factores, Sx y Sy, que representan el cambio de tamaño en los ejes X y Y, respectivamente. Estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
+-Uso de factores de escala: El escalamiento se realiza mediante dos factores, Sx y Sy, que representan el cambio de tamaño en los ejes X y Y, respectivamente,  estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
 
 
 
@@ -100,18 +100,18 @@ Cuando los valores son iguales a 1, el objeto no sufre ningún cambio en su tama
 -Independencia por eje: Los factores Sx y Sy pueden aplicarse de manera independiente, lo que permite modificar el tamaño del objeto de forma distinta en cada eje esto proporciona flexibilidad para adaptar la figura a diferentes necesidades o condiciones.
 
 
--Escalamiento uniforme: Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original. Este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
+-Escalamiento uniforme: Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original, este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
 
 
 
--Escalamiento diferencial (no uniforme): Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma. Es decir, la figura puede estirarse o comprimirse en una dirección específica.
+-Escalamiento diferencial (no uniforme): Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma, es decir, la figura puede estirarse o comprimirse en una dirección específica.
 
 
 
 -Aplicación a todos los puntos del objeto: El escalamiento se aplica a cada uno de los puntos que conforman la figura al multiplicar todas las coordenadas por los factores de escala, se obtiene una nueva representación del objeto con el tamaño modificado.
 
 
--Conservación parcial de propiedades: Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones. Sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
+-Conservación parcial de propiedades: Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones, sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
 
 
 **2.1.3. Rotación.**
@@ -123,8 +123,6 @@ Esta transformación se define mediante un ángulo de rotación (\theta), el cua
 A diferencia de otras transformaciones, como el escalamiento o el sesgado, la rotación no modifica las propiedades geométricas del objeto, tales como su tamaño, forma o proporciones. Únicamente altera su orientación y posición en el plano.
 
 La rotación puede realizarse con respecto al origen del sistema de coordenadas (0,0) o alrededor de cualquier punto arbitrario (x_r, y_r). En este último caso, el proceso implica trasladar temporalmente el objeto para que el punto de rotación coincida con el origen, aplicar la rotación y posteriormente regresar el objeto a su posición original.
-
-En el ámbito de la computación gráfica, la rotación se expresa comúnmente mediante representaciones matemáticas, como matrices de transformación, lo que permite aplicar esta operación de manera eficiente a todos los puntos de un objeto.
 
 
 **Características**
@@ -190,7 +188,7 @@ Esto provoca que la figura se incline hacia arriba o hacia abajo.
 
 En el ámbito de la graficación por computadora, las transformaciones bidimensionales pueden representarse de manera eficiente mediante el uso de matrices, lo que permite realizar operaciones geométricas de forma estructurada y sistemática. Esta representación, conocida como representación matricial, facilita la aplicación de transformaciones como traslación, rotación, escalamiento y sesgado sobre objetos en el plano cartesiano.
 
-Existen dos formas principales de representar las coordenadas de un punto dentro de este enfoque. La primera consiste en expresar el punto como un vector renglón, donde la matriz de transformación se multiplica por la derecha del vector para obtener el nuevo punto transformado. La segunda forma es representar el punto como un vector columna, en cuyo caso la matriz de transformación se multiplica por la izquierda. Ambas notaciones son válidas, aunque la representación mediante vectores columna es la más utilizada en la mayoría de aplicaciones gráficas.
+Existen dos formas principales de representar las coordenadas de un punto dentro de este enfoque. La primera consiste en expresar el punto como un vector renglón, donde la matriz de transformación se multiplica por la derecha del vector para obtener el nuevo punto transformado. La segunda forma es representar el punto como un vector columna, en cuyo caso la matriz de transformación se multiplica por la izquierda ambas notaciones son válidas, aunque la representación mediante vectores columna es la más utilizada en la mayoría de aplicaciones gráficas.
 
 Una de las principales ventajas de la representación matricial es que permite manejar secuencias de transformaciones de manera eficiente. En muchas aplicaciones, como la animación o el diseño asistido por computadora (CAD), es común aplicar múltiples transformaciones de forma consecutiva. Por ejemplo, un objeto puede trasladarse, rotarse y escalarse en distintos pasos para lograr un resultado final. En estos casos, cada transformación se representa mediante una matriz, y el resultado total se obtiene mediante la multiplicación de dichas matrices.
 
