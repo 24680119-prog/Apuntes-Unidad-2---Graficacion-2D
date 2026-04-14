@@ -1,9 +1,5 @@
 ## Apuntes unidad 2 :  Graficación 2D
-
-
-
-
-
+La graficación bidimensional es una forma de representar y trabajar con objetos en un plano de dos dimensiones, utilizando herramientas matemáticas y digitales. Gracias a esto, es posible crear figuras, modificarlas y darles diferentes formas según lo que se necesite. A lo largo de este trabajo se explican distintos temas que permiten entender cómo funcionan estos procesos, como las transformaciones geométricas, que sirven para mover, girar o cambiar el tamaño de los objetos, así como la representación matricial, que ayuda a realizar estos cambios de manera más eficiente. También se incluyen otros elementos importantes como las curvas, los fractales y la creación de fuentes de texto, los cuales permiten generar diseños más complejos y visualmente atractivos. En conjunto, todos estos conceptos ayudan a comprender mejor cómo se construyen y manipulan los gráficos en 2D dentro de diferentes aplicaciones digitales.
 
 
 ## 2.1  Transformación bidimensional.
@@ -35,24 +31,24 @@ El conjunto de valores (tx, ty) se conoce como vector de traslación, ya que ind
 
 
 **Características**
-1. Cambio de posición mediante coordenadas: La traslación consiste en desplazar un punto desde una posición original (x, y) hacia una nueva posición (x’, y’), este desplazamiento se realiza sumando las distancias de traslación en cada eje  donde Tx y Ty representan las magnitudes de desplazamiento en los ejes X y Y, respectivamente.
+-Cambio de posición mediante coordenadas: La traslación consiste en desplazar un punto desde una posición original (x, y) hacia una nueva posición (x’, y’), este desplazamiento se realiza sumando las distancias de traslación en cada eje  donde Tx y Ty representan las magnitudes de desplazamiento en los ejes X y Y, respectivamente.
 
 
-2. Uso del vector de traslación: El par ordenado (Tx, Ty) se denomina vector de traslación o vector de cambio, ya que define tanto la dirección como la distancia del desplazamiento. Este vector es fundamental para describir el movimiento aplicado a cualquier objeto dentro del plano cartesiano.
+-Uso del vector de traslación: El par ordenado (Tx, Ty) se denomina vector de traslación o vector de cambio, ya que define tanto la dirección como la distancia del desplazamiento. Este vector es fundamental para describir el movimiento aplicado a cualquier objeto dentro del plano cartesiano.
 
 
-3. Aplicación en polígonos: En el caso de figuras compuestas por múltiples puntos, como los polígonos, la traslación se realiza aplicando el mismo vector de traslación a cada uno de sus vértices. Como resultado, la figura se reposiciona completamente sin sufrir alteraciones en su forma, tamaño o proporciones.
+-Aplicación en polígonos: En el caso de figuras compuestas por múltiples puntos, como los polígonos, la traslación se realiza aplicando el mismo vector de traslación a cada uno de sus vértices. Como resultado, la figura se reposiciona completamente sin sufrir alteraciones en su forma, tamaño o proporciones.
 
 
-4. Aplicación en objetos curvos: Para figuras definidas mediante curvas, como circunferencias o elipses, la traslación implica modificar sus parámetros principales, como las coordenadas del centro. Una vez trasladados estos puntos de referencia, la figura se reconstruye en su nueva ubicación manteniendo sus características originales.
+-Aplicación en objetos curvos: Para figuras definidas mediante curvas, como circunferencias o elipses, la traslación implica modificar sus parámetros principales, como las coordenadas del centro. Una vez trasladados estos puntos de referencia, la figura se reconstruye en su nueva ubicación manteniendo sus características originales.
 
 
-5. Naturaleza de las distancias de traslación
+-Naturaleza de las distancias de traslación
 Las distancias de traslación pueden tomar cualquier valor real, es decir, pueden ser positivas, negativas o nulas. Un valor positivo indica un desplazamiento en el sentido positivo del eje, mientras que un valor negativo indica un movimiento en sentido contrario.
 
 
 
-6. Limitaciones dentro del sistema de representación: Cuando un objeto es trasladado fuera de los límites del área de visualización o del sistema gráfico, pueden presentarse diferentes situaciones, como la omisión parcial del objeto, su recorte o incluso la generación de errores en el sistema. Estas limitaciones dependen del entorno o software utilizado.
+-Limitaciones dentro del sistema de representación: Cuando un objeto es trasladado fuera de los límites del área de visualización o del sistema gráfico, pueden presentarse diferentes situaciones, como la omisión parcial del objeto, su recorte o incluso la generación de errores en el sistema. Estas limitaciones dependen del entorno o software utilizado.
 
 
 7. Conservación de las propiedades geométricas: Una característica esencial de la traslación es que no altera las propiedades del objeto. Es decir, la figura conserva su forma, tamaño, orientación y proporciones, ya que únicamente cambia su posición en el plano.
