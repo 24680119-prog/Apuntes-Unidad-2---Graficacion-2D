@@ -51,15 +51,15 @@ Las distancias de traslación pueden tomar cualquier valor real, es decir, puede
 -Limitaciones dentro del sistema de representación: Cuando un objeto es trasladado fuera de los límites del área de visualización o del sistema gráfico, pueden presentarse diferentes situaciones, como la omisión parcial del objeto, su recorte o incluso la generación de errores en el sistema. Estas limitaciones dependen del entorno o software utilizado.
 
 
-7. Conservación de las propiedades geométricas: Una característica esencial de la traslación es que no altera las propiedades del objeto. Es decir, la figura conserva su forma, tamaño, orientación y proporciones, ya que únicamente cambia su posición en el plano.
+-Conservación de las propiedades geométricas: Una característica esencial de la traslación es que no altera las propiedades del objeto. Es decir, la figura conserva su forma, tamaño, orientación y proporciones, ya que únicamente cambia su posición en el plano.
 
 ## 2.1.2. Escalamiento.
 
 El escalamiento es una transformación geométrica bidimensional que consiste en modificar el tamaño de un objeto dentro del plano cartesiano, ya sea aumentándolo o reduciéndolo, sin alterar su forma general. Esta transformación se realiza mediante el uso de factores de escala, los cuales determinan cuánto se expanden o contraen las dimensiones del objeto en cada eje.
 
 Para aplicar el escalamiento, se multiplican las coordenadas de cada punto del objeto por los factores de escala correspondientes en los ejes X y Y. Si un punto original tiene coordenadas (x, y), sus nuevas coordenadas (x’, y’) se obtienen de la siguiente manera:
-x’= X⋅ s_x    y’= y⋅ s_y
-donde Sx y Sy representan los factores de escalamiento en los ejes X y Y, respectivamente.
+**x’= X⋅ sx    y’= y⋅ sy** donde Sx y Sy representan los factores de escalamiento en los ejes X y Y, respectivamente.
+
 El efecto del escalamiento depende del valor de estos factores:
 
 -Si el factor es mayor que 1, el objeto aumenta de tamaño (ampliación).
@@ -70,50 +70,47 @@ El efecto del escalamiento depende del valor de estos factores:
 
 
 El escalamiento permite generar efectos visuales importantes, como el zoom, y es ampliamente utilizado en áreas como gráficos por computadora, animación, diseño digital y modelado geométrico.
+
 Tipos de escalamiento
 
-**1. Escalamiento uniforme**
-
-En este tipo de transformación, los factores de escala son iguales en ambos ejes, es decir, Sx = Sy, esto provoca que el objeto cambie de tamaño de manera proporcional, manteniendo exactamente su forma y proporciones originales. Es el tipo de escalamiento más utilizado cuando se desea ampliar o reducir un objeto sin distorsionarlo.
+**1. Escalamiento uniforme**: En este tipo de transformación, los factores de escala son iguales en ambos ejes, es decir, Sx = Sy, esto provoca que el objeto cambie de tamaño de manera proporcional, manteniendo exactamente su forma y proporciones originales. Es el tipo de escalamiento más utilizado cuando se desea ampliar o reducir un objeto sin distorsionarlo.
 
 
 
-**2. Escalamiento diferencial (no uniforme)**
-
-En este caso, los factores de escala son diferentes en cada eje, es decir, sx ≠sy como resultado, el objeto se deforma, ya que se estira o comprime en una dirección más que en la otra. Este tipo de escalamiento se utiliza cuando se desea modificar la forma del objeto o adaptarlo a ciertas condiciones específicas.
+**2. Escalamiento diferencial (no uniforme)**: En este caso, los factores de escala son diferentes en cada eje, es decir, sx ≠sy como resultado, el objeto se deforma, ya que se estira o comprime en una dirección más que en la otra. Este tipo de escalamiento se utiliza cuando se desea modificar la forma del objeto o adaptarlo a ciertas condiciones específicas.
 
 
 **Características**
 
 
-1. Uso de factores de escala: El escalamiento se realiza mediante dos factores, Sx y Sy, que representan el cambio de tamaño en los ejes X y Y, respectivamente. Estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
+-Uso de factores de escala: El escalamiento se realiza mediante dos factores, Sx y Sy, que representan el cambio de tamaño en los ejes X y Y, respectivamente. Estos factores son valores numéricos reales positivos que determinan cómo se transformarán las dimensiones del objeto.
 
 
 
-2. Efecto de los valores de escalamiento: El resultado de la transformación depende del valor de los factores de escala:
+-Efecto de los valores de escalamiento: El resultado de la transformación depende del valor de los factores de escala:
 
--Cuando los valores son mayores que 1, el objeto experimenta un aumento de tamaño (ampliación).
+Cuando los valores son mayores que 1, el objeto experimenta un aumento de tamaño (ampliación).
 
--Cuando los valores están entre 0 y 1, el objeto se reduce (disminución).
+Cuando los valores están entre 0 y 1, el objeto se reduce (disminución).
 
--Cuando los valores son iguales a 1, el objeto no sufre ningún cambio en su tamaño.
-
-
-3. Independencia por eje: Los factores Sx y Sy pueden aplicarse de manera independiente, lo que permite modificar el tamaño del objeto de forma distinta en cada eje. Esto proporciona flexibilidad para adaptar la figura a diferentes necesidades o condiciones.
+Cuando los valores son iguales a 1, el objeto no sufre ningún cambio en su tamaño.
 
 
-4. Escalamiento uniforme: Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original. Este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
+-Independencia por eje: Los factores Sx y Sy pueden aplicarse de manera independiente, lo que permite modificar el tamaño del objeto de forma distinta en cada eje esto proporciona flexibilidad para adaptar la figura a diferentes necesidades o condiciones.
 
 
-
-5. Escalamiento diferencial (no uniforme): Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma. Es decir, la figura puede estirarse o comprimirse en una dirección específica.
+-Escalamiento uniforme: Cuando Sx = Sy, se produce un escalamiento uniforme por lo que en este caso, el objeto cambia de tamaño de manera proporcional en todas sus dimensiones, conservando su forma, proporciones y apariencia original. Este tipo de escalamiento es ideal cuando se desea ampliar o reducir una figura sin deformarla.
 
 
 
-6. Aplicación a todos los puntos del objeto: El escalamiento se aplica a cada uno de los puntos que conforman la figura al multiplicar todas las coordenadas por los factores de escala, se obtiene una nueva representación del objeto con el tamaño modificado.
+-Escalamiento diferencial (no uniforme): Cuando sx ≠sy, se presenta un escalamiento diferencial, en este caso, el objeto se modifica de manera desigual en cada eje, lo que provoca una distorsión en su forma. Es decir, la figura puede estirarse o comprimirse en una dirección específica.
 
 
-7. Conservación parcial de propiedades: Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones. Sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
+
+-Aplicación a todos los puntos del objeto: El escalamiento se aplica a cada uno de los puntos que conforman la figura al multiplicar todas las coordenadas por los factores de escala, se obtiene una nueva representación del objeto con el tamaño modificado.
+
+
+-Conservación parcial de propiedades: Aunque el escalamiento modifica el tamaño del objeto, en el caso del escalamiento uniforme se conservan sus proporciones. Sin embargo, en el escalamiento diferencial estas proporciones pueden alterarse, generando cambios en la forma del objeto.
 
 
 **2.1.3. Rotación.**
@@ -131,7 +128,7 @@ En el ámbito de la computación gráfica, la rotación se expresa comúnmente m
 
 **Características*¨*
 
-1. Definición mediante ángulo y punto de rotación : Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
+-Definición mediante ángulo y punto de rotación : Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
 
 2. Sentido de la rotación: El sentido en el que se realiza la rotación depende del signo del ángulo:
 
@@ -140,13 +137,13 @@ En el ámbito de la computación gráfica, la rotación se expresa comúnmente m
 
 -Un ángulo negativo indica una rotación en sentido horario.
 
-3. Trayectoria circular de los puntos: Durante la rotación, cada punto del objeto se desplaza siguiendo una trayectoria circular alrededor del punto pivote, manteniendo constante su distancia respecto a este.
+-Trayectoria circular de los puntos: Durante la rotación, cada punto del objeto se desplaza siguiendo una trayectoria circular alrededor del punto pivote, manteniendo constante su distancia respecto a este.
 
-4. Conservación de la forma y el tamaño: La rotación es una transformación rígida, lo que significa que no altera las propiedades geométricas del objeto. La figura conserva su forma, tamaño y proporciones, cambiando únicamente su orientación.
+-Conservación de la forma y el tamaño: La rotación es una transformación rígida, lo que significa que no altera las propiedades geométricas del objeto. La figura conserva su forma, tamaño y proporciones, cambiando únicamente su orientación.
 
-5. Aplicación uniforme a todos los puntos: Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto. Esto garantiza que la figura no se deforme durante el proceso.
+-Aplicación uniforme a todos los puntos: Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto. Esto garantiza que la figura no se deforme durante el proceso.
 
-6. Rotación respecto al origen y puntos arbitrarios:
+-Rotación respecto al origen y puntos arbitrarios:
 
 La rotación puede realizarse:
 
@@ -166,20 +163,18 @@ El sesgado es ampliamente utilizado en áreas como el diseño gráfico, la anima
 
 **Características**
 
-1. Transformación no rígida: El sesgado es una transformación no rígida, lo que significa que modifica la forma del objeto original. A diferencia de la traslación o la rotación, aquí sí existe deformación.
+-Transformación no rígida: El sesgado es una transformación no rígida, lo que significa que modifica la forma del objeto original. A diferencia de la traslación o la rotación, aquí sí existe deformación.
 
 
 
-2. Desplazamiento proporcional de los puntos: Los puntos del objeto se desplazan en función de su posición respecto a uno de los ejes. Este desplazamiento es proporcional, lo que genera la inclinación característica de la figura.
+-Desplazamiento proporcional de los puntos: Los puntos del objeto se desplazan en función de su posición respecto a uno de los ejes. Este desplazamiento es proporcional, lo que genera la inclinación característica de la figura.
 
 
 
-3. Conservación del paralelismo
-
-Aunque el objeto se deforma, las líneas que eran paralelas antes de la transformación continúan siéndolo después del sesgado.
+-Conservación del paralelismo: Aunque el objeto se deforma, las líneas que eran paralelas antes de la transformación continúan siéndolo después del sesgado.
 
 
-4. Dependencia de un factor de sesgo: El grado de inclinación del objeto depende de un valor llamado factor de sesgo, el cual determina cuánto se desplazan los puntos del objeto.
+-Dependencia de un factor de sesgo: El grado de inclinación del objeto depende de un valor llamado factor de sesgo, el cual determina cuánto se desplazan los puntos del objeto.
 
 
 
