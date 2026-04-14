@@ -126,7 +126,7 @@ La rotación puede realizarse con respecto al origen del sistema de coordenadas 
 En el ámbito de la computación gráfica, la rotación se expresa comúnmente mediante representaciones matemáticas, como matrices de transformación, lo que permite aplicar esta operación de manera eficiente a todos los puntos de un objeto.
 
 
-**Características*¨*
+**Características**
 
 -Definición mediante ángulo y punto de rotación : Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
 
