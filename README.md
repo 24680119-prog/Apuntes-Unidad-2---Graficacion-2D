@@ -32,6 +32,8 @@ El conjunto de valores (tx, ty) se conoce como vector de traslación, ya que ind
 
 
 **Características**
+
+
 -Cambio de posición mediante coordenadas: La traslación consiste en desplazar un punto desde una posición original (x, y) hacia una nueva posición (x’, y’), este desplazamiento se realiza sumando las distancias de traslación en cada eje  donde Tx y Ty representan las magnitudes de desplazamiento en los ejes X y Y, respectivamente.
 
 
@@ -120,16 +122,17 @@ La rotación es una transformación geométrica bidimensional que consiste en gi
 
 Esta transformación se define mediante un ángulo de rotación, el cual determina la magnitud del giro, así como su dirección. Por convención, los ángulos positivos representan una rotación en sentido antihorario, mientras que los ángulos negativos indican una rotación en sentido horario.
 
-A diferencia de otras transformaciones, como el escalamiento o el sesgado, la rotación no modifica las propiedades geométricas del objeto, tales como su tamaño, forma o proporciones. Únicamente altera su orientación y posición en el plano.
+A diferencia de otras transformaciones, como el escalamiento o el sesgado, la rotación no modifica las propiedades geométricas del objeto, tales como su tamaño, forma o proporciones unicamente altera su orientación y posición en el plano.
 
-La rotación puede realizarse con respecto al origen del sistema de coordenadas (0,0) o alrededor de cualquier punto arbitrario (x_r, y_r). En este último caso, el proceso implica trasladar temporalmente el objeto para que el punto de rotación coincida con el origen, aplicar la rotación y posteriormente regresar el objeto a su posición original.
+La rotación puede realizarse con respecto al origen del sistema de coordenadas (0,0) o alrededor de cualquier punto arbitrario (xr, yr). En este último caso, el proceso implica trasladar temporalmente el objeto para que el punto de rotación coincida con el origen, aplicar la rotación y posteriormente regresar el objeto a su posición original.
 
 
 **Características**
 
 -Definición mediante ángulo y punto de rotación : Para realizar una rotación es necesario especificar dos elementos fundamentales: el ángulo de rotación y el punto de rotación o pivote (xr, yr). Estos determinan la magnitud del giro y el punto alrededor del cual se realiza la transformación.
 
-2. Sentido de la rotación: El sentido en el que se realiza la rotación depende del signo del ángulo:
+
+-Sentido de la rotación: El sentido en el que se realiza la rotación depende del signo del ángulo:
 
 -Un ángulo positivo indica una rotación en sentido antihorario.
 
@@ -140,16 +143,16 @@ La rotación puede realizarse con respecto al origen del sistema de coordenadas 
 
 -Conservación de la forma y el tamaño: La rotación es una transformación rígida, lo que significa que no altera las propiedades geométricas del objeto. La figura conserva su forma, tamaño y proporciones, cambiando únicamente su orientación.
 
--Aplicación uniforme a todos los puntos: Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto. Esto garantiza que la figura no se deforme durante el proceso.
+-Aplicación uniforme a todos los puntos: Para que la rotación sea correcta, el mismo ángulo debe aplicarse a todos los puntos del objeto esto garantiza que la figura no se deforme durante el proceso.
 
 -Rotación respecto al origen y puntos arbitrarios:
 
 La rotación puede realizarse:
 
--Respecto al origen (0,0), utilizando directamente las ecuaciones de transformación.
+Respecto al origen (0,0), utilizando directamente las ecuaciones de transformación.
 
 
--Respecto a un punto arbitrario, en cuyo caso se requiere trasladar el objeto al origen, aplicar la rotación y posteriormente regresarlo a su posición original
+Respecto a un punto arbitrario, en cuyo caso se requiere trasladar el objeto al origen, aplicar la rotación y posteriormente regresarlo a su posición original
  
 ## 2.1.4. Sesgado.
 
@@ -192,7 +195,7 @@ Existen dos formas principales de representar las coordenadas de un punto dentro
 
 Una de las principales ventajas de la representación matricial es que permite manejar secuencias de transformaciones de manera eficiente. En muchas aplicaciones, como la animación o el diseño asistido por computadora (CAD), es común aplicar múltiples transformaciones de forma consecutiva. Por ejemplo, un objeto puede trasladarse, rotarse y escalarse en distintos pasos para lograr un resultado final. En estos casos, cada transformación se representa mediante una matriz, y el resultado total se obtiene mediante la multiplicación de dichas matrices.
 
-De esta manera, si se tiene un punto P y varias transformaciones representadas por matrices M_1, M_2, M_3, etc., es posible calcular directamente la posición final del punto combinando todas las matrices en una sola operación. Esto evita tener que recalcular las coordenadas paso a paso después de cada transformación, lo que mejora significativamente la eficiencia computacional.
+De esta manera, si se tiene un punto P y varias transformaciones representadas por matrices M1, M2, M3, etc., es posible calcular directamente la posición final del punto combinando todas las matrices en una sola operación. Esto evita tener que recalcular las coordenadas paso a paso después de cada transformación, lo que mejora significativamente la eficiencia computacional.
 
 En este contexto, algunas matrices contienen información específica según el tipo de transformación. Por ejemplo, una matriz puede incluir los ángulos de rotación y los factores de escala, mientras que otra puede incorporar los valores de traslación, relacionados con el desplazamiento del objeto o con el centro de rotación. La combinación de estas matrices permite representar transformaciones complejas de manera compacta.
 
