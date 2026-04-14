@@ -179,7 +179,7 @@ El sesgado es ampliamente utilizado en áreas como el diseño gráfico, la anima
 
 
 
-5. Tipos de sesgado
+**Tipos de sesgado**
 
 -Sesgo horizontal: En este tipo de transformación, los puntos se desplazan en dirección horizontal (eje X), mientras que las coordenadas en el eje Y permanecen constantes es decir, el objeto se inclina hacia los lados.
 
@@ -252,7 +252,7 @@ Las curvas B-spline ofrecen una gran flexibilidad y control en la modelación, p
 
 En el ámbito práctico, las B-spline tienen múltiples aplicaciones. En el diseño asistido por computadora (CAD), se emplean para modelar superficies tridimensionales complejas con gran exactitud. En la animación, permiten generar movimientos suaves y continuos, fundamentales para la creación de gráficos dinámicos y personajes en 3D. Asimismo, en el diseño industrial, se utilizan para desarrollar productos con formas funcionales y estéticamente agradables, mejorando aspectos como la ergonomía y la usabilidad.
 
-** Ejemplo**
+**Ejemplo**
 
 En la animación realizada, el personaje está construido utilizando curvas spline, específicamente curvas Bézier, que son un tipo de representación matemática muy utilizada en gráficos por computadora.
 
